@@ -19,18 +19,58 @@
             background-color: peachpuff;
         }
         #content {
-            height: 400px;
             background-color: rgb(209, 85, 85);
         }
+
+        #left {
+            width: 50%;
+            height: 400px;
+            background-color: #e79f73;
+            float: left;
+        }
+
+        #right {
+            width: 50%;
+            height: 400px;
+            background-color: #757ce0;
+            float: left;
+        }
+
         #footer {
             height: 50px;
             background-color: rgb(248, 131, 96);
+            clear: both;
+        }
+
+        #footleft, #footmid, #footright {
+            height: 50px;
+            width: 400px;
+            float: left;
+        }
+
+        #footleft {
+            background-color: aqua;
+        }
+
+        #footmid {
+            background-color: aquamarine;
+        }
+
+        #footright {
+            background-color: bisque;
         }
     </style>
 </head>
 <body>
     <div id="header" class="row"></div>
-    <div id="content" class="row"></div>
-    <div id="footer" class="row"></div>
+    <div id="content" class="row">
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+    <div id="footer" class="row">
+        <div id="footleft"></div>
+        <div id="footmid"></div>
+        <div id="footright"></div>
+    </div>
 </body>
 </html>
